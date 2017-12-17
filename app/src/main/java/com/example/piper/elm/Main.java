@@ -29,6 +29,9 @@ import android.widget.TextView;
         import android.view.ViewParent;
         import android.widget.TableLayout;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+
 public class Main extends AppCompatActivity {
 
     private static final String TAG = "Main";
