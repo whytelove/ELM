@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.SeekBar;
 import android.widget.Toast;
 
 import android.content.res.Resources;
@@ -24,22 +25,43 @@ import uk.co.senab.photoview.PhotoViewAttacher;
 
 public class MapFragment extends Fragment {
     private static final String TAG = "MapFragment";
+    SeekBar seekBar; // seekBar pour le choix de l'UC du jour
+    TextView uc ; // Text UC
+    int progress = 1;
 
-    private Button btnTEST;
+
+
     @Nullable
     @Override
 
 
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.map_fragment,container,false);
-        btnTEST = (Button) view.findViewById(R.id.btnTEST);
 
-        btnTEST.setOnClickListener(new View.OnClickListener() {
+
+        seekBar = (SeekBar) view.findViewById(R.id.seekBar3);
+        uc = (TextView) view.findViewById(R.id.textview_uc);
+        uc.setText("H"+progress);
+        uc.setTextSize(20);
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
-            public void onClick(View view) {
-                Toast.makeText(getActivity(), "TESTING BUTTON CLICK 1",Toast.LENGTH_SHORT).show();
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                progress = i +1;
+                uc.setText("H"+progress);
+                uc.setTextSize(20);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
             }
         });
+
 
         return view;
     }

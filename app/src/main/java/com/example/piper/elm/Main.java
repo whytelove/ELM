@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.SeekBar;
 import android.widget.TextView;
 
         import android.content.res.Resources;
@@ -28,23 +29,28 @@ import android.widget.TextView;
         import android.view.ViewParent;
         import android.widget.TableLayout;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+
 public class Main extends AppCompatActivity {
 
     private static final String TAG = "Main";
     private SectionsPageAdapter mSectionsPageAdapter;
     private ViewPager mViewPager;
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Log.d(TAG,"onCreate: Starting");
 
-        mSectionsPageAdapter = new SectionsPageAdapter(getSupportFragmentManager());
-
+      mSectionsPageAdapter = new SectionsPageAdapter(getSupportFragmentManager());
         mViewPager = (ViewPager) findViewById(R.id.container);
         setupViewPager(mViewPager);
-
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
+
 
 
     }
@@ -53,7 +59,7 @@ public class Main extends AppCompatActivity {
         SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager());
         adapter.addFragment(new MapFragment(),"Map");
         adapter.addFragment(new ResearchFragment(),"Research");
-        adapter.addFragment(new testFrag(),"test");
+      adapter.addFragment(new testFrag(),"test");
         viewPager.setAdapter(adapter);
     }
 }
