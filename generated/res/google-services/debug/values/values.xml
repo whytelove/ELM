@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">237415052376-a5qvqj99l02urbti79n712vuv67va0s4.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://eniblivemap.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">237415052376</string>
+    <string name="google_api_key" translatable="false">AIzaSyC3w4cpAHyIgn7XV37c2cKMiHCZaX3dYb0</string>
+    <string name="google_app_id" translatable="false">1:237415052376:android:8bfd2b95f4c9bcf3</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC3w4cpAHyIgn7XV37c2cKMiHCZaX3dYb0</string>
+    <string name="google_storage_bucket" translatable="false">eniblivemap.appspot.com</string>
+    <string name="project_id" translatable="false">eniblivemap</string>
+</resources>

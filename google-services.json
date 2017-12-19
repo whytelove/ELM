@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "237415052376",
+    "firebase_url": "https://eniblivemap.firebaseio.com",
+    "project_id": "eniblivemap",
+    "storage_bucket": "eniblivemap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237415052376:android:8bfd2b95f4c9bcf3",
+        "android_client_info": {
+          "package_name": "com.example.piper.elm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237415052376-gnee8lq97rsqjtolrsdt6tjmlds7ed69.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.piper.elm",
+            "certificate_hash": "78cb41d27539cc30e344861f2d55217d25da6a84"
+          }
+        },
+        {
+          "client_id": "237415052376-a5qvqj99l02urbti79n712vuv67va0s4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3w4cpAHyIgn7XV37c2cKMiHCZaX3dYb0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237415052376-a5qvqj99l02urbti79n712vuv67va0s4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
