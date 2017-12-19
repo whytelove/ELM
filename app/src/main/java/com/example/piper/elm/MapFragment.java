@@ -57,7 +57,7 @@ public class MapFragment extends Fragment {
         uc_std.setTextSize(20);
         System.out.print(uc_std.getText().toString());
         uc_std.setText("H1");
-        if (uc_std.getText().toString() == "H1") course.setText("Labo Ang");
+        if (uc_std.getText().toString().equalsIgnoreCase("H1")) course.setText("Labo Ang");
 
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -67,19 +67,21 @@ public class MapFragment extends Fragment {
 
 
                 progress = i +1;
-                if (progress == 2) uc_std.setText("H2");
+                if (progress == 1) uc_std.setText("H1");
+                else if (progress == 2) uc_std.setText("H2");
                 else if (progress == 3) uc_std.setText("H3");
                 else if (progress == 4) uc_std.setText("H4");
                 else if (progress == 5) uc_std.setText("H5");
                 else if (progress == 6) uc_std.setText("H6");
                 else if (progress == 7) uc_std.setText("H7");
                 uc_std.setTextSize(20);
-                if (uc_std.getText().toString() == "H2") course.setText("Bdd");
-                else if(uc_std.getText().toString() == "H3") course.setText("Poo");
-                else if(uc_std.getText().toString() == "H4") course.setText("Pause midi");
-                else if(uc_std.getText().toString() == "H5") course.setText("ASN");
-                else if(uc_std.getText().toString() == "H6") course.setText("SHI");
-                else if(uc_std.getText().toString() == "H7") course.setText("Pas cours");
+                if (uc_std.getText().toString().equalsIgnoreCase("H2") ) course.setText("Bdd");
+                else if(uc_std.getText().toString().equalsIgnoreCase("H3")) course.setText("Poo");
+                else if(uc_std.getText().toString().equalsIgnoreCase("H4")) course.setText("Pause midi");
+                else if(uc_std.getText().toString().equalsIgnoreCase("H5")) course.setText("ASN");
+                else if(uc_std.getText().toString().equalsIgnoreCase("H6")) course.setText("SHI");
+                else if(uc_std.getText().toString().equalsIgnoreCase("H7")) course.setText("Pas cours");
+                else if(uc_std.getText().toString().equalsIgnoreCase("H1")) course.setText("Labo Ang");
 
 
             }
